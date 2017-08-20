@@ -1,3 +1,14 @@
 apply plugin: 'idea'
 //and standard one
 apply plugin: 'java'
+
+repositories {
+    //central maven repo
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjavafx
+    compile group: 'io.reactivex.rxjava2', name: 'rxjavafx', version: '2.1.1'
+}
+
