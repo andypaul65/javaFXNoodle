@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javaFXNoodle.iml" filepath="$PROJECT_DIR$/javaFXNoodle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaFXNoodle2.iml" filepath="$PROJECT_DIR$/.idea/modules/javaFXNoodle2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaFXNoodle2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/javaFXNoodle2_main.iml" group="javaFXNoodle2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaFXNoodle2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/javaFXNoodle2_test.iml" group="javaFXNoodle2" />
     </modules>
   </component>
 </project>
