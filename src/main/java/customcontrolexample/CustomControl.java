@@ -7,9 +7,9 @@ import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.AnchorPane;
 
-public class CustomControl extends VBox {
+public class CustomControl extends AnchorPane {
     @FXML private TextField textField;
 
     public CustomControl() {
