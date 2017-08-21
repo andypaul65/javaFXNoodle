@@ -34,17 +34,34 @@ package customcontrolexample;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class CustomControlExample extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        CustomControl customControl = new CustomControl();
-        customControl.setText("Hello!");
-        
-        stage.setScene(new Scene(customControl));
+        CustomControl customControl1 = new CustomControl();
+        customControl1.setText("Hello");
+
+        CustomControl customControl2 = new CustomControl();
+        customControl2.setText("World!");
+
+        GridPane gridPane = new GridPane();
+
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+
+        gridPane.add(customControl1,0,0);
+        gridPane.add(customControl2,1,0);
+
+
+        Scene scene = new Scene(gridPane);
+
+
+
+        stage.setScene(scene);
         stage.setTitle("Custom Control");
-        stage.setWidth(300);
+        stage.setWidth(500);
         stage.setHeight(200);
         stage.show();
     }

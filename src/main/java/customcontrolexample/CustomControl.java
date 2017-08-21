@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class CustomControl extends AnchorPane {
+    static int controlIndex = 1;
     @FXML private TextField textField;
 
     public CustomControl() {
@@ -23,6 +24,8 @@ public class CustomControl extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
+        setId("#control_" + controlIndex);
+        controlIndex++;
     }
 
     public String getText() {
@@ -39,6 +42,6 @@ public class CustomControl extends AnchorPane {
 
     @FXML
     protected void doSomething() {
-        System.out.println("The button was clicked!");
+        System.out.println("The button was clicked! - " + getId());
     }
 }
